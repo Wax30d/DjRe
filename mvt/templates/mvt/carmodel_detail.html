@@ -1,0 +1,14 @@
+{% block content %}
+  <h1>{{ carmodel.name }}</h1>
+  <h2>Fuel Type</h2>
+  <ul>
+    {% for fuel_type in carmodel.fuel_type.all %}
+      <li>
+        <a href="{% url 'fuel_type_detail' fuel_type.pk %}">{{ fuel_type.fuel_type }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+<hr>
+<pre style="font-size:120%; font-family:verdana;"><a href="http://127.0.0.1:8000/carmodel/">Back</a></pre>
+<pre style="font-size:120%; font-family:verdana;"><a href="http://127.0.0.1:8000/">Menu</a></pre>
