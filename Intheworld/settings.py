@@ -32,6 +32,7 @@ else:
 
 SECRET_KEY = env('SECRET_KEY')
 ALLOWED_HOSTS = ['djre.onrender.com']
+# ALLOWED_HOSTS = ['*']
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-t!f%bks3tz9lk+l@2wblice)g!g_w2^7_)z2!-dab9n0=c1581'
